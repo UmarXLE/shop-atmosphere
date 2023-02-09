@@ -38,6 +38,8 @@ const CatalogPage = () => {
                             <button className={styles.btn}>Плащ</button>
                             <button className={styles.btn}>Тренч</button>
                             <button className={styles.btn}>Все</button>
+                            <button className={styles.btn}>Тимур далбеб</button>
+
                         </nav>
                     </div>
                     <div className={styles.wrapperContent}>
