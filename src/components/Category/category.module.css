@@ -1,0 +1,50 @@
+.wrapper {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #252525;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container a{
+    background: url('../../../public/assets/category-1.png')no-repeat;
+    background-size: cover;
+}
+
+.item {
+    text-decoration: none;
+    width: 25%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-right: 35px;
+}
+
+.item:hover {
+    transform: translateX(-5px) translateY(-5px);
+    transition: 0.25s ease all;
+}
+.name {
+    width: 100%;
+    text-align: center;
+    background: rgba(224, 190, 162, 0.75);
+    backdrop-filter: blur(3px);
+    padding: 8px 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}

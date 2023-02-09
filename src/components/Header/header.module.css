@@ -1,0 +1,32 @@
+.menu {
+    width: 34px;
+    height: 24px;
+    background: url('../../../public/assets/burger-header.png')no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    /* right: 10%; */
+    /* left: 10%; */
+    z-index: 1;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content:baseline;
+    /* position: absolute; */
+}
+
+
+.nav a {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+
+}
+
+.logo {
+    font-size: 45px;
+    color:black;
+}

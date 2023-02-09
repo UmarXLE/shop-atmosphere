@@ -1,0 +1,36 @@
+.item {
+    width: 30%;
+    margin: 0 15px 30px 0;
+}
+
+.item:hover {
+    transition: 0.25s ease all;
+    transform: translateX(-3px) translateY(-3px);
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #252525;
+    margin: 10px 0 5px 0;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 5px;
+}
+
+.size {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(37, 37, 37, 0.5);
+}
