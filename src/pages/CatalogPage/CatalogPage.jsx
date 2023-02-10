@@ -16,6 +16,7 @@ const CatalogPage = () => {
   const handleChange = (event) => {
     setAge(event.target.value);
   };
+  
 
   return (
     <div className={styles.mainWrapper}>
@@ -116,8 +117,10 @@ const CatalogPage = () => {
                 return (
                   <ProductItem
                     key={product.id}
+                    products = {products}
                     id={product.id}
                     name={product.name}
+                    imgback = {product.imgback}
                     img={product.img}
                     size={product.size}
                     price={product.price}

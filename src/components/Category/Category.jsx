@@ -7,8 +7,8 @@ const Category = () => {
         <div className={styles.wrapper}> 
             <h2 className={styles.title}>Категории</h2>
             <div className={styles.container}>
-                <Link className={styles.item} to=''>
-                    <div className={styles.name}>Куртки</div>
+                <Link className={styles.item} to='/tricko'>
+                    <div className={styles.name}>Тренч</div>
                 </Link>
                 <Link className={styles.item} to=''>
                     <div className={styles.name}>Пальто</div>

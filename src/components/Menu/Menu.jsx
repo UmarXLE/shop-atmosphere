@@ -20,9 +20,9 @@ const Menu = ({close}) => {
                     <Link to='/'>Главная</Link>
                     <Link to='/catalog'>Каталог</Link>
                     <Link to='/catalog'>Пальто</Link>
-                    <Link to='/catalog'>Тренч</Link>
+                    <Link to='/tricko'>Тренч</Link>
                     <Link to='/catalog'>Плащь</Link>
-                    <Link to='/catalog'>Обмен и возврат</Link>
+                    <Link to='/refund'>Обмен и возврат</Link>
                 </div>
             </div>
             

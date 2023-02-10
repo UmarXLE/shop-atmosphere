@@ -3,6 +3,7 @@
     height: 24px;
     background: url('../../../public/assets/burger-header.png')no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .wrapper {

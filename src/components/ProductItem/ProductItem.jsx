@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './productitem.module.css'
 
 const ProductItem = (props) => {
+    const [card , setCard ] = useState(true)
+    const handleCard = () => {
+        setCard(!card)
+    }
     return (
         <div className={styles.item}>
-            <div className={styles.img}>
-                <img src={props.img} alt="" />
+            <div className={styles.img}  onClick={handleCard}>
+                
+                {
+                    card ? (<><img src={props.img} alt=""  /></>):(<><img src={props.imgback} alt=""  /></>)
+                }
+
             </div>
             <div className={styles.info}>
                 <h2 className={styles.title}>{props.name}</h2>

@@ -1,0 +1,31 @@
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+}
+
+.route p,
+.route a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252525;
+  text-decoration: none;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.top {
+  margin-bottom: 50px;
+}
+
+.productsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
