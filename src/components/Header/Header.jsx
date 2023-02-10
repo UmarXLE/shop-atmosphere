@@ -1,10 +1,23 @@
-import React from 'react';
+import React ,{useEffect ,useState} from 'react';
 import styles from './header.module.css'
+import Menu from '../Menu/Menu'
 
 const Header = () => {
+    const [menu , setMenu ] = useState(false)
+    const handleMenu = () => {
+        setMenu(true)
+    }
+    const handleCloseMenu = () => {
+        setMenu(false)
+    }
     return (
         <div className={styles.wrapper}>
-            <div className={styles.menu}>
+              {
+                menu && <Menu 
+                        close = {handleCloseMenu}
+                    />
+            }
+            <div className={styles.menu} onClick={handleMenu}>
                 <img src="./assets/burger-header.png" alt="" />
             </div>
             <div className={styles.logo}>

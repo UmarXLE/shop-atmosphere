@@ -1,0 +1,78 @@
+.wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(34, 33, 33, 0.772);
+}
+
+.top {
+  background-color: rgba(61, 61, 61);
+  padding: 22px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  background: url('../../../public/assets/close.png')no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nav a {
+    width: 100%;
+    padding: 20px 0;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color:white;
+  text-transform: uppercase;
+  border-bottom: 0.3px solid #ffffffc4;
+}
+.nav a:hover {
+    transition: 0.25s ease all;
+    color: rgba(61, 61, 61);;
+    background-color: white;
+}
+.social {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+      color:white;
+ font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.socialMedia a img {
+    width: 30px;
+    margin: 5px;
+}
+
+.number {
+    margin-bottom: 5px;
+}
