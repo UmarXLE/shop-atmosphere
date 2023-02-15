@@ -10,11 +10,11 @@ const Category = () => {
                 <Link className={styles.item} to='/tricko'>
                     <div className={styles.name}>Тренч</div>
                 </Link>
-                <Link className={styles.item} to=''>
+                <Link className={styles.item} to='/palto'>
                     <div className={styles.name}>Пальто</div>
                 </Link>
-                <Link className={styles.item} to=''>
-                    <div className={styles.name}>Шубы</div>
+                <Link className={styles.item} to='/plash'>
+                    <div className={styles.name}>Плащ</div>
                 </Link>
             </div>
         </div>

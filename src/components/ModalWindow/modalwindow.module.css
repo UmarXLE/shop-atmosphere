@@ -1,0 +1,70 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.751);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  z-index: 103;
+  box-shadow: -8px 6px 43px 0px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: -8px 6px 43px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -8px 6px 43px 0px rgba(0, 0, 0, 0.69);
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    background: url('../../../public/assets/close.png')no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 110;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+
+
+.title {
+    margin-right: 15px;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titleWrapper img {
+    width: 40px;
+    height: 40px;
+}
+
+.contacts img {
+    width: 30px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.whatsapp ,.call{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}

@@ -23,7 +23,7 @@ const HeaderIntro = () => {
             </div>
 
             <div className={styles.logo}>
-                LOGO
+                Atmosphere
             </div>
 
             <div className={styles.nav}>

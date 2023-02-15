@@ -19,9 +19,11 @@ const Menu = ({close}) => {
                 <div className={styles.nav}>
                     <Link to='/'>Главная</Link>
                     <Link to='/catalog'>Каталог</Link>
-                    <Link to='/catalog'>Пальто</Link>
+                    <Link to='/palto'>Пальто</Link>
                     <Link to='/tricko'>Тренч</Link>
-                    <Link to='/catalog'>Плащь</Link>
+                    <Link to='/plash'>Плащь</Link>
+                    <Link to='/about'>О нас</Link>
+                    <Link to='/contact'>Контакты</Link>
                     <Link to='/refund'>Обмен и возврат</Link>
                 </div>
             </div>
@@ -34,9 +36,13 @@ const Menu = ({close}) => {
                     <a href="">
                         <img src="./assets/whatsapp.png" alt="" />
                     </a>
+                    <a href="">
+                        <img src="./assets/call.png" alt="" />
+                    </a>
                 </div>
                 <div className={styles.number}>+996 706 354 574</div>
                 <div className={styles.email}>example@gmail.com</div>
+
             </div>
         </div>
     );

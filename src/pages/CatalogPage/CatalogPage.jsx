@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./catalogpage.module.css";
 import Header from "../../components/Header/Header";
 import InputLabel from "@mui/material/InputLabel";
@@ -11,17 +11,34 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 
 const CatalogPage = () => {
-  const [age, setAge] = useState("");
+  const [status, setStatus] = useState("all");
+  // const [filteredProducts, setFilteredProducts] = useState(products)
+  // console.log(filteredProducts)
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+  // const handleChange = (e) => {
+   
+  //   setStatus(e.target.value)
+  //   console.log(status)
+  // };
+  // console.log(status)
+
+  // useEffect(()=>{
+  //   if(status == 'all'){
+  //     filteredProducts(products)
+  //   }else{
+  //     let newArray = [...products].filter(product => product.category == status)
+  //     console.error(status)
+  //     setFilteredProducts(newArray)
+  //     console.log(filteredProducts)
+  //   }
+  // },[status])
+  const handleChange = () => {}
   
 
   return (
     <div className={styles.mainWrapper}>
+     <Header />
       <div className={styles.container}>
-        <Header />
         <div className={styles.route}>
           <Link to="/">Главная</Link>
           <div className={styles.icon}>
@@ -47,16 +64,16 @@ const CatalogPage = () => {
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
-                  value={age}
+                  value={status}
                   label="Age"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value='all'>Все</MenuItem>
+                  <MenuItem value='triko'>Тренч</MenuItem>
+                  <MenuItem value='palto'>Пальто</MenuItem>
                 </Select>
               </FormControl>
               <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
@@ -64,7 +81,7 @@ const CatalogPage = () => {
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
-                  value={age}
+                  value={status}
                   label="Age"
                   onChange={handleChange}
                 >
@@ -81,7 +98,7 @@ const CatalogPage = () => {
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
-                  value={age}
+                  value={status}
                   label="Age"
                   onChange={handleChange}
                 >
@@ -98,7 +115,7 @@ const CatalogPage = () => {
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
-                  value={age}
+                  value={status}
                   label="Age"
                   onChange={handleChange}
                 >
@@ -124,6 +141,7 @@ const CatalogPage = () => {
                     img={product.img}
                     size={product.size}
                     price={product.price}
+                    descr = {product.descr}
                   />
                 );
               })}

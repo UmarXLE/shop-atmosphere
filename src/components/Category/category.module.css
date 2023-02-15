@@ -16,8 +16,16 @@
     flex-wrap: wrap;
 }
 
-.container a{
-    background: url('../../../public/assets/category-1.png')no-repeat;
+.container a:first-child{
+    background: url('../../../public/assets/product-1.png')no-repeat;
+    background-size: cover;
+}
+.container a:nth-child(2){
+    background: url('../../../public/assets/product-16.png')no-repeat;
+    background-size: cover;
+}
+.container a:last-child{
+    background: url('../../../public/assets/product-29.png')no-repeat;
     background-size: cover;
 }
 

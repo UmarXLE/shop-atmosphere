@@ -1,6 +1,6 @@
 .item {
     width: 30%;
-    margin: 0 15px 30px 0;
+    margin: 0 15px 30px 0;    
 }
 
 .item:hover {
@@ -9,7 +9,10 @@
     cursor: pointer;
 }
 .img img {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
+    overflow: hidden;
+    height: 465px;
 }
 .title {
     font-weight: 300;
@@ -30,6 +33,14 @@
 }
 
 .size {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(37, 37, 37, 0.5);
+    margin-bottom: 3px;
+}
+.descr {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;

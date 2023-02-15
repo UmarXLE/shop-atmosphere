@@ -9,8 +9,8 @@ const Footer = () => {
             <div className={styles.container}>
                 <nav className={styles.item}>
                     <h2 className={styles.title}>Компания</h2>
-                    <Link to=''>О нас</Link>
-                    <Link to=''>Контакты</Link>
+                    <Link to='/about'>О нас</Link>
+                    <Link to='/contact'>Контакты</Link>
                 </nav>
 
                 <nav className={styles.item}>
