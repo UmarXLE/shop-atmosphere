@@ -54,3 +54,9 @@
     color: #FFFFFF;
 
 }
+
+@media (max-width:776px) {
+    .wrapper {
+        width: 80%;
+    }
+}

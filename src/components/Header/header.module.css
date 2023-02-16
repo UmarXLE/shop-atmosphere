@@ -9,7 +9,7 @@
 .wrapper {
     /* right: 10%; */
     /* left: 10%; */
-    width: 80%;
+    width: 100%;
     margin: auto;
     z-index: 1;
     margin: 25px auto;
@@ -32,4 +32,13 @@
 .logo {
     font-size: 45px;
     color:black;
+}
+
+@media (max-width:767px) {
+    .nav {
+        display: none;
+    }
+    .wrapper  {
+        align-items: center;
+    }
 }

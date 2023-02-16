@@ -31,8 +31,9 @@
 
 .item {
     text-decoration: none;
-    width: 25%;
+    width: 30%;
     height: 450px;
+    /* aspect-ratio: 3/1; */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -55,4 +56,19 @@
     text-align: center;
     color: #FFFFFF;
 
+}
+
+
+@media (max-width:992px) {
+    .item {
+        width: 43%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width:776px) {
+    .item {
+        width: 100%;
+        margin-right: 0;
+    }
 }

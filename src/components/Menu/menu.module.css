@@ -76,3 +76,25 @@
 .number {
     margin-bottom: 5px;
 }
+
+
+@media (max-width:1199px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+
+@media (max-width:776px) {
+  .wrapper {
+    width: 45%;
+  }
+}
+
+
+@media (max-width:576px) {
+  .wrapper {
+    width: 100%;
+    background-color: rgba(34, 33, 33, 0.973);
+
+  }
+}

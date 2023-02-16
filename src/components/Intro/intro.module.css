@@ -38,3 +38,7 @@
     text-transform: uppercase;
     line-height: 19px;
 }
+
+@media (max-width:1199px) {
+    
+}

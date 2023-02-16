@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    margin: auto;
+    width: 80%;
 }
 .route {
     display: flex;
@@ -34,4 +36,17 @@
     display: flex;
     margin-top: 30px;
     flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+    .info {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767px) {
+    .info {
+        margin-top: 50px;
+    }
 }

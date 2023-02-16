@@ -13,7 +13,7 @@ const Menu = ({close}) => {
         <div className={styles.wrapper} data-aos="fade-left" data-aos-duration="1000" >
             <div>
                 <div className={styles.top}>
-                    <div className={styles.logo}>logo</div>
+                    <div className={styles.logo}>Atmosphere</div>
                     <div className={styles.close} onClick={close}></div>
                 </div>
                 <div className={styles.nav}>

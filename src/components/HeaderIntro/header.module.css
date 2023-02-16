@@ -32,3 +32,12 @@
     font-size: 45px;
     color: white;
 }
+
+@media (max-width:776px) {
+    .nav {
+        display: none;
+    }
+    .wrapper {
+        align-items: center;
+    }
+}

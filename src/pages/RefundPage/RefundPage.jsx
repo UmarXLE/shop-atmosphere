@@ -4,6 +4,7 @@ import styles from "./refundpage.module.css";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import RefundItem from "../../components/RefundItem/RefundItem";
+import Route from '../../components/Route/Route'
 
 const RefundPage = () => {
   const info = [
@@ -35,20 +36,16 @@ const RefundPage = () => {
       img: "./assets/refund-6.png",
       descr:
         "после получения возврата мы делаем перевод денежных средств на карту клиента",
-    },
-  ];
+    },];
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.container}>
+      <div>
         <Header />
-        <div className={styles.route}>
-          <Link to="/">Главная </Link>
-          <div className={styles.icon}>
-            <img src="./assets/icon.png" alt="" />
-          </div>
-          <p>Обмен и возврат</p>
-        </div>
-        <div className={styles.content}>
+        <Route name='Обмен и возврат'/>
+      </div>
+      <div>
+      <div className={styles.content}>
           <h2 className={styles.title}></h2>
           <p className={styles.subTitle}></p>
           <div className={styles.info}>
@@ -58,12 +55,13 @@ const RefundPage = () => {
               );
             })}
           </div>
-        </div>
       </div>
-
+      </div>
       <div>
-        <Footer />
+       <Footer />
       </div>
+        
+        
     </div>
   );
 };

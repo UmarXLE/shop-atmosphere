@@ -8,3 +8,24 @@
 .icon {
     margin-bottom: 10px;
 }
+
+@media (max-width:1199px) {
+    .item {
+        width: 20%;
+    }
+}
+
+@media (max-width:992px) {
+    .item {
+        width: 40%;
+        /* margin-right: 0; */
+    }
+}
+
+@media (max-width:767px) {
+    .item {
+        width: 70%;
+        margin-right: 0;
+
+    }
+}
