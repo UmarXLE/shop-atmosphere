@@ -9,6 +9,7 @@ import { products } from "../../database/database";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Route from '../../components/Route/Route'
 
 const CatalogPage = () => {
   const [status, setStatus] = useState("all");
@@ -37,15 +38,12 @@ const CatalogPage = () => {
 
   return (
     <div className={styles.mainWrapper}>
-     <Header />
+      <div>
+        <Header />
+        <Route name='Каталог'/>
+      </div>
       <div className={styles.container}>
-        <div className={styles.route}>
-          <Link to="/">Главная</Link>
-          <div className={styles.icon}>
-            <img src="./assets/icon.png" alt="" />
-          </div>
-          <p>Каталог</p>
-        </div>
+        
 
         <div className={styles.wrapper}>
           <div className={styles.navigation}>
@@ -149,7 +147,10 @@ const CatalogPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
+      
     </div>
   );
 };
