@@ -16,13 +16,13 @@ const ContactPage = () => {
                 <div className={styles.container}>
                     <div className={styles.info}>
                         <h2 className={styles.title}>Контакты</h2>
-                        <a className={styles.number} href="">+996 99 99 99</a>
+                        <a className={styles.number} href="tel:+996706354574">+996 706 35 45 74</a>
                         <p className={styles.chart}>пн — пт с 9.00 до 19.00</p>
                         <div className={styles.socialMedia}>
-                            <a className={styles.socialItem} href="">
+                            <a className={styles.socialItem} target='_blank' href="https://wa.me/996706354574">
                                 <img src="./assets/whatsapp.png" alt="" />
                             </a>
-                            <a className={styles.socialItem} href="">
+                            <a className={styles.socialItem} target='_blank' href="https://www.instagram.com/atmosphere_shop/">
                                 <img src="./assets/instagram.png" alt="" />
                             </a>
                         </div>
