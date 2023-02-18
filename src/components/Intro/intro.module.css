@@ -39,6 +39,10 @@
     line-height: 19px;
 }
 
-@media (max-width:1199px) {
+
+@media (max-width:767px) {
+    .title {
+        font-size: 36px;
+    }
     
 }

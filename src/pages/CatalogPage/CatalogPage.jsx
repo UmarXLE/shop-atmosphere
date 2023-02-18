@@ -9,137 +9,101 @@ import { products } from "../../database/database";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Route from '../../components/Route/Route'
+import Route from "../../components/Route/Route";
+import TextField from "@mui/material/TextField";
 
 const CatalogPage = () => {
   const [status, setStatus] = useState("all");
-  // const [filteredProducts, setFilteredProducts] = useState(products)
-  // console.log(filteredProducts)
-
-  // const handleChange = (e) => {
-   
-  //   setStatus(e.target.value)
-  //   console.log(status)
-  // };
-  // console.log(status)
-
-  // useEffect(()=>{
-  //   if(status == 'all'){
-  //     filteredProducts(products)
-  //   }else{
-  //     let newArray = [...products].filter(product => product.category == status)
-  //     console.error(status)
-  //     setFilteredProducts(newArray)
-  //     console.log(filteredProducts)
-  //   }
-  // },[status])
-  const handleChange = () => {}
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [color, setColor] = useState("");
+  const [value, setValue] = useState("");
   
+  useEffect(() => {
+    if (status == "all") {
+      setFilteredProducts(products);
+    } else if (status) {
+      let newProducts = [...products].filter(
+        (product) => product.category === status
+      );
+      setFilteredProducts(newProducts);
+    } 
+  }, [status, color]);
+
+  
+  const handleChange = (e) => {
+    setStatus(e.target.value);
+    setColor(e.target.value);
+  };
+
+  const searchFilteredProducts = filteredProducts.filter(product => {
+    return product.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+  })
+
 
   return (
     <div className={styles.mainWrapper}>
       <div>
         <Header />
-        <Route name='Каталог'/>
+        <Route name="Каталог" />
       </div>
       <div className={styles.container}>
-        
-
         <div className={styles.wrapper}>
-          <div className={styles.navigation}>
-            <h2 className={styles.title}>Каталог</h2>
-            <nav className={styles.navigation}>
-              <button className={styles.btn}>Пальто</button>
-              <button className={styles.btn}>Плащ</button>
-              <button className={styles.btn}>Тренч</button>
-              <button className={styles.btn}>Все</button>
-            </nav>
-          </div>
           <div className={styles.wrapperContent}>
             <div className={styles.filter}>
               <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                <InputLabel id="demo-select-small">Размер</InputLabel>
+                <InputLabel id="demo-select-small"></InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={status}
                   label="Age"
-                  onChange={handleChange}
+                  onChange={(e)=>handleChange(e)}
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value='all'>Все</MenuItem>
-                  <MenuItem value='triko'>Тренч</MenuItem>
-                  <MenuItem value='palto'>Пальто</MenuItem>
+                  <MenuItem value="all">Все</MenuItem>
+                  <MenuItem value="triko">Тренч</MenuItem>
+                  <MenuItem value="palto">Пальто</MenuItem>
+                  <MenuItem value="plash">Плащ</MenuItem>
                 </Select>
               </FormControl>
+{/* 
               <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                <InputLabel id="demo-select-small">Цвет</InputLabel>
+                <InputLabel id="demo-select-small"></InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={status}
                   label="Age"
-                  onChange={handleChange}
+                  onChange={handleColor}
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value="all">Все</MenuItem>
+                  <MenuItem value="black">Черный</MenuItem>
+                  <MenuItem value="brown">Коричневый</MenuItem>
                 </Select>
-              </FormControl>
-              <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                <InputLabel id="demo-select-small">Цена</InputLabel>
-                <Select
-                  labelId="demo-select-small"
-                  id="demo-select-small"
-                  value={status}
-                  label="Age"
-                  onChange={handleChange}
-                >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </FormControl>
-              <FormControl sx={{ m: 1, minWidth: 160 }} size="small">
-                <InputLabel id="demo-select-small">Сортировка по </InputLabel>
-                <Select
-                  labelId="demo-select-small"
-                  id="demo-select-small"
-                  value={status}
-                  label="Age"
-                  onChange={handleChange}
-                >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </FormControl>
+              </FormControl> */}
+
+
+              <TextField
+                onChange={(e) => setValue(e.target.value)}
+                size="small"
+                id="outlined-basic"
+                label="Поиск товара"
+                variant="outlined"
+              />
             </div>
 
             <div className={styles.content}>
-              {products.map((product) => {
+              {searchFilteredProducts.map((product) => {
                 return (
                   <ProductItem
                     key={product.id}
-                    products = {products}
+                    products={products}
                     id={product.id}
                     name={product.name}
-                    imgback = {product.imgback}
+                    imgback={product.imgback}
                     img={product.img}
                     size={product.size}
                     price={product.price}
-                    descr = {product.descr}
+                    descr={product.descr}
                   />
                 );
               })}
@@ -150,7 +114,6 @@ const CatalogPage = () => {
       <div>
         <Footer />
       </div>
-      
     </div>
   );
 };

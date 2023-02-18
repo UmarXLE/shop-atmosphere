@@ -1,6 +1,6 @@
 .wrapper {
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 70vh;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.751);
   top: 50%;
@@ -67,4 +67,31 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
+}
+
+@media (max-width:1199px) {
+    .wrapper {
+        height:40vh;;
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper {
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (max-width:576px) {
+    .wrapper {
+        height: 50vh;
+        width: 60%;
+    }
+}
+
+@media (max-width:456px) {
+    .wrapper {
+        height: 40vh;
+        width: 70%;
+    }
 }

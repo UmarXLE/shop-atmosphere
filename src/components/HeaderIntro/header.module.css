@@ -33,11 +33,14 @@
     color: white;
 }
 
-@media (max-width:776px) {
+@media (max-width:767px) {
     .nav {
         display: none;
     }
     .wrapper {
         align-items: center;
+    }
+    .logo {
+        font-size: 34px;
     }
 }

@@ -59,4 +59,7 @@
     .wrapper {
         width: 80%;
     }
+    .title {
+        font-size: 34px;
+    }
 }

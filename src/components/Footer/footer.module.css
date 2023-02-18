@@ -1,69 +1,104 @@
 .wrapper {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .container {
-    padding: 100px 0 50px 0;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+  padding: 100px 0 50px 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .item {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    color: #252525;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #252525;
 }
 
-.link{
-    font-size: 16px;
-    line-height: 19px;
-    color: #252525;
-    font-weight: 300;
-    text-decoration: none; 
-    margin-bottom: 10px;
-
+.link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #252525;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .text {
-    text-align: center;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    color: #252525;
-    padding-bottom: 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #252525;
+  padding-bottom: 10px;
 }
 
 .accordionWrapper {
-    width: 100%;
-    display: none;
-    flex-direction: column;
+  width: 100%;
+  display: none;
+  flex-direction: column;
 }
 
-@media (max-width:776px) {
-    .item {
-        width: 45%;
-        margin-bottom: 30px;
-        margin-right: 10px;
-    }
-    .container {
-        justify-content: center;
-        padding: 50px 0;
-    }
-    .item {
-        display: none;
-    }
-    .accordionWrapper {
-        display: flex;
-    }
+.social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.socialItem img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSocial a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #252525;
+}
+
+.socialFooterItems {
+  margin-top: 10px;
+}
+
+
+.socialFooterItems a img {
+  margin-right: 10px;
+
+  width: 35px;
+}
+
+@media (max-width: 776px) {
+  .item {
+    width: 45%;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  .container {
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .item {
+    display: none;
+  }
+  .accordionWrapper {
+    display: flex;
+  }
 }

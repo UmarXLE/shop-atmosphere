@@ -41,4 +41,7 @@
     .wrapper  {
         align-items: center;
     }
+    .logo {
+        font-size: 34px;
+    }
 }

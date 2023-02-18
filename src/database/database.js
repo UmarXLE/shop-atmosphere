@@ -11,12 +11,14 @@ export const products = [
     },
     {
         id:2,
-        name:'Тренч Черный',
+        name:'Тренч Коричневый',
         price:'Договорная',
         img:'./assets/product-2.png',
         size:'42 44 46 48',
         imgback:'./assets/product-back-2.png',
-        category:'triko'
+        category:'triko',
+        color:'brown'
+
 
 
     },
@@ -42,7 +44,7 @@ export const products = [
     },
     {
         id:5,
-        name:'Пальто Черный',
+        name:'Пальто Голубой',
         price:'Договорная',
         img:'./assets/product-5.png',
         size:'42 44 46 48',
@@ -54,7 +56,7 @@ export const products = [
     }
     ,{
         id:6,
-        name:'Пальто Черный',
+        name:'Пальто Коричневый',
         price:'Договорная',
         img:'./assets/product-6.png',
         size:'42 44 46 48',
@@ -354,6 +356,62 @@ export const products = [
         name:'Плащ Черный',
         price:'Договорная',
         img:'./assets/product-33.png',
+        size:'42 44',
+        imgback:'./assets/product-back-plash-24.png',
+        category:'plash',
+        descr:'Ткань драп'
+
+    },
+    // узнать что это
+    {
+        id:34,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-34.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-34.png',
+        category:'plash',
+        descr:'Ткань драп'
+
+    },
+    {
+        id:35,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-35.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-35.png',
+        category:'plash',
+        descr:'Ткань драп'
+
+    },
+    {
+        id:36,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-36.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-36.png',
+        category:'plash',
+        descr:'Ткань драп'
+
+    },
+    {
+        id:37,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-37.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-37.png',
+        category:'plash',
+        descr:'Ткань драп'
+
+    },
+    {
+        id:38,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-38.png',
         size:'42 44',
         imgback:'./assets/product-back-plash-24.png',
         category:'plash',

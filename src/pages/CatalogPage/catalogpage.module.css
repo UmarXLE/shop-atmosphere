@@ -23,12 +23,10 @@
     margin: 0 10px;
 }
 
-.container {
-    
-}
 
 .filter {
     display: flex;
+    align-items: center;
 }
 
 .wrapper {
@@ -42,9 +40,6 @@
     width: 10%;
 }
 
-.wrapperContent {
-    width: 90%;
-}
 
 .title {
     font-weight: 300;

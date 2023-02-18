@@ -13,106 +13,114 @@ const Footer = () => {
       <div className={styles.container}>
         <nav className={styles.item}>
           <h2 className={styles.title}>Компания</h2>
-          <Link className={styles.link} to="/about">О нас</Link>
-          <Link className={styles.link} to="/contact">Контакты</Link>
+          <Link className={styles.link} to="/about">
+            О нас
+          </Link>
+          <Link className={styles.link} to="/contact">
+            Контакты
+          </Link>
         </nav>
 
         <nav className={styles.item}>
           <h2 className={styles.title}>ПОЛЕЗНОЕ</h2>
-          <Link className={styles.link} to="">Оплата и доставка</Link>
-          <Link className={styles.link} to="/refund">Обмен и доставка</Link>
+          <Link className={styles.link} to="">
+            Оплата и доставка
+          </Link>
+          <Link className={styles.link} to="/refund">
+            Обмен и доставка
+          </Link>
         </nav>
 
         <nav className={styles.item}>
           <h2 className={styles.title}>ПОКУПАТЕЛЮ</h2>
-          <Link className={styles.link} to="">Избранное</Link>
-          <Link className={styles.link} to="">Политика конфиденциальности</Link>
+          <Link className={styles.link} to="">
+            Избранное
+          </Link>
+          <Link className={styles.link} to="">
+            Политика конфиденциальности
+          </Link>
         </nav>
 
         <nav className={styles.item}>
           <h2 className={styles.title}>КОНТАКТЫ</h2>
           <div className={styles.social}>
             <div className={styles.socialItem}>
-              <img src="" alt="" />
+              <img src="./assets/whatsapp.png" alt="" />
+            </div>
+            <div className={styles.socialItem}>
+              <img src="./assets/instagram.png" alt="" />
             </div>
           </div>
-          <Link className={styles.link} to="">+38(073) 096 36 44</Link>
-          <Link className={styles.link} to="">info@yanki.com</Link>
+          <a className={styles.link}>
+            +38(073) 096 36 44
+          </a>
+          <a className={styles.link}>
+            info@yanki.com
+          </a>
         </nav>
 
         <div className={styles.accordionWrapper}>
-          <Accordion style={{marginBottom:'15px'}}>
+          <Accordion style={{ marginBottom: "15px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography>Компания</Typography>
+              <Typography>КОМПАНИЯ</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{marginBottom:'15px'}}>
-                <Link className={styles.link} to="/about">О нас</Link>
+              <Typography style={{ marginBottom: "15px" }}>
+                <Link className={styles.link} to="/about">
+                  О нас
+                </Link>
               </Typography>
               <Typography>
-                <Link className={styles.link} to="/contact">Контакты</Link>
+                <Link className={styles.link} to="/contact">
+                  Контакты
+                </Link>
               </Typography>
             </AccordionDetails>
           </Accordion>
 
-          <Accordion style={{marginBottom:'15px'}}>
+          <Accordion style={{ marginBottom: "15px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography>Компания</Typography>
+              <Typography>ПОЛЕЗНОЕ</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{marginBottom:'15px'}}>
-                <Link className={styles.link} to="/about">О нас</Link>
+              <Typography style={{ marginBottom: "15px" }}>
+                <Link className={styles.link} to="/refund">
+                  Оплата и доставка
+                </Link>
               </Typography>
-              <Typography>
+              {/* <Typography>
                 <Link className={styles.link} to="/contact">Контакты</Link>
-              </Typography>
+              </Typography> */}
             </AccordionDetails>
           </Accordion>
 
-          <Accordion style={{marginBottom:'15px'}}>
+          <Accordion style={{ marginBottom: "15px" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography>Компания</Typography>
+              <Typography>КОНТАКТЫ</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{marginBottom:'15px'}}>
-                <Link className={styles.link} to="/about">О нас</Link>
-              </Typography>
-              <Typography>
-                <Link className={styles.link} to="/contact">Контакты</Link>
+              <Typography className={styles.footerSocial} style={{ marginBottom: "15px" }}>
+                  <a className={styles.number} href="">+996 99 99 99</a>
+                  <div className={styles.socialFooterItems}>
+                    <a href=""><img src="./assets/whatsapp.png" alt="" /></a>
+                    <a href=""><img src="./assets/instagram.png" alt="" /></a>
+                  </div>
+                  
               </Typography>
             </AccordionDetails>
           </Accordion>
-
-          <Accordion style={{marginBottom:'15px'}}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Компания</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography style={{marginBottom:'15px'}}>
-                <Link className={styles.link} to="/about">О нас</Link>
-              </Typography>
-              <Typography>
-                <Link className={styles.link} to="/contact">Контакты</Link>
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          
         </div>
       </div>
 
