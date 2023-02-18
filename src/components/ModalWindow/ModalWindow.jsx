@@ -1,13 +1,18 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styles from './modalwindow.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ModalWindow = ({close}) => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} >
 
             <div className={styles.close} onClick={close}></div>
 
-            <div className={styles.content}>
+            <div className={styles.content} data-aos="zoom-in" data-aos-duration="1200" >
                 <div className={styles.titleWrapper}>
                     <h2 className={styles.title}>
                         Заказать

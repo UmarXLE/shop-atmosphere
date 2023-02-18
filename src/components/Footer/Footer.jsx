@@ -44,19 +44,22 @@ const Footer = () => {
         <nav className={styles.item}>
           <h2 className={styles.title}>КОНТАКТЫ</h2>
           <div className={styles.social}>
-            <div className={styles.socialItem}>
+            <a href="https://wa.me/996706354574" 
+            target='_blank'
+            className={styles.socialItem}>
+              
               <img src="./assets/whatsapp.png" alt="" />
-            </div>
-            <div className={styles.socialItem}>
+            </a>
+            <a
+             target='_blank'
+              href="https://www.instagram.com/atmosphere_shop/"
+              className={styles.socialItem}
+            >
               <img src="./assets/instagram.png" alt="" />
-            </div>
+            </a>
           </div>
-          <a className={styles.link}>
-            +38(073) 096 36 44
-          </a>
-          <a className={styles.link}>
-            info@yanki.com
-          </a>
+          <a href="tel:+996706354574" className={styles.link}>+996 706 35 45 74</a>
+          <a className={styles.link}>atmosphere.shop312@gmail.com</a>
         </nav>
 
         <div className={styles.accordionWrapper}>
@@ -111,20 +114,31 @@ const Footer = () => {
               <Typography>КОНТАКТЫ</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className={styles.footerSocial} style={{ marginBottom: "15px" }}>
-                  <a className={styles.number} href="">+996 99 99 99</a>
-                  <div className={styles.socialFooterItems}>
-                    <a href=""><img src="./assets/whatsapp.png" alt="" /></a>
-                    <a href=""><img src="./assets/instagram.png" alt="" /></a>
-                  </div>
-                  
+              <Typography
+                className={styles.footerSocial}
+                style={{ marginBottom: "15px" }}
+              >
+                <a className={styles.number} href="tel:+996706354574">
+                  +996 706 35 45 74
+                </a>
+                <div className={styles.socialFooterItems}>
+                  <a target="_blank" href="https://wa.me/996706354574">
+                    <img src="./assets/whatsapp.png" alt="" />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/atmosphere_shop/"
+                  >
+                    <img src="./assets/instagram.png" alt="" />
+                  </a>
+                </div>
               </Typography>
             </AccordionDetails>
           </Accordion>
         </div>
       </div>
 
-      <div className={styles.text}>©️ 2021 Yanki. All rights reserved</div>
+      <div className={styles.text}>©️ 2023 Atmosphere. All rights reserved</div>
     </div>
   );
 };

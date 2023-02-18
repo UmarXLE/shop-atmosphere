@@ -30,18 +30,18 @@ const Menu = ({close}) => {
             
             <div className={styles.social}>
                 <div className={styles.socialMedia}>
-                    <a href="">
+                    <a target='_blank' href="https://www.instagram.com/atmosphere_shop/">
                         <img src="./assets/instagram.png" alt="" />
                     </a>
-                    <a href="">
+                    <a target='_blank' href="https://wa.me/996706354574">
                         <img src="./assets/whatsapp.png" alt="" />
                     </a>
-                    <a href="">
+                    <a href="tel:+996706354574">
                         <img src="./assets/call.png" alt="" />
                     </a>
                 </div>
-                <div className={styles.number}>+996 706 354 574</div>
-                <div className={styles.email}>example@gmail.com</div>
+                <a href='tel:+996706354574"' className={styles.number}>+996 706 354 574</a>
+                <a href='' className={styles.email}>atmosphere.shop312@gmail.com</a>
 
             </div>
         </div>

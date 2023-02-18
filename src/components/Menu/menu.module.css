@@ -26,7 +26,7 @@
   position: absolute;
   right: 20px;
   z-index: 1;
-  background: url('../../../public/assets/close.png')no-repeat;
+  background: url("../../../public/assets/close.png") no-repeat;
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -41,40 +41,49 @@
 }
 
 .nav a {
-    width: 100%;
-    padding: 20px 0;
+  width: 100%;
+  padding: 20px 0;
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color:white;
+  color: white;
   text-transform: uppercase;
   border-bottom: 0.3px solid #ffffffc4;
 }
 .nav a:hover {
-    transition: 0.25s ease all;
-    color: rgba(61, 61, 61);;
-    background-color: white;
+  transition: 0.25s ease all;
+  color: rgba(61, 61, 61);
+  background-color: white;
 }
 .social {
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-      color:white;
- font-weight: 300;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
 }
 
 .socialMedia a img {
-    width: 30px;
-    margin: 5px;
+  width: 30px;
+  margin: 5px;
 }
 
 .number {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.number,
+.email {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .logo {
@@ -83,24 +92,21 @@
   text-transform: uppercase;
 }
 
-
-@media (max-width:1199px) {
+@media (max-width: 1199px) {
   .wrapper {
     width: 40%;
   }
 }
 
-@media (max-width:776px) {
+@media (max-width: 776px) {
   .wrapper {
     width: 45%;
   }
 }
 
-
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .wrapper {
     width: 100%;
     background-color: rgba(34, 33, 33, 0.973);
-
   }
 }

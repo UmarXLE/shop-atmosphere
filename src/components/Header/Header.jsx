@@ -21,7 +21,7 @@ const Header = () => {
                 <img src="./assets/burger-header.png" alt="" />
             </div>
             <div className={styles.logo}>
-                Atmosphere
+            ATMOSPHERE
             </div>
             <div className={styles.nav}>
                 Каталог
