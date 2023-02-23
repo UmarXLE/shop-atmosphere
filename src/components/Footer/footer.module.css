@@ -85,6 +85,15 @@
   width: 35px;
 }
 
+.socialWrapper {
+  display: flex;
+}
+
+.socailLink {
+  margin-left: 10px;
+}
+
+
 @media (max-width: 776px) {
   .item {
     width: 45%;
