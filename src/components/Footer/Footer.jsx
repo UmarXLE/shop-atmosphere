@@ -44,26 +44,31 @@ const Footer = () => {
         <nav className={styles.item}>
           <h2 className={styles.title}>КОНТАКТЫ</h2>
           <div className={styles.socialWrapper}>
-          <div className={styles.social}>
-            <a href="https://wa.me/996706354574" 
-            target='_blank'
-            className={styles.socialItem}>
-              <img src="./assets/whatsapp.png" alt="" />
-            </a>
-            <a
-             target='_blank'
-              href="https://www.instagram.com/atmosphere_shop/"
-              className={styles.socialItem}
-            >
-              <img src="./assets/instagram.png" alt="" />
-            </a>
+            <div className={styles.social}>
+              <div className={styles.socailIconsWrapper}> 
+                <a
+                  href="https://wa.me/996706354574"
+                  target="_blank"
+                  className={styles.socialItem}
+                >
+                  <img src="./assets/whatsapp.png" alt="" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/atmosphere_shop/"
+                  className={styles.socialItem}
+                >
+                  <img src="./assets/instagram.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div className={styles.socailLink}>
+              <a href="tel:+996706354574" className={styles.link}>
+                +996 706 35 45 74
+              </a>
+              <a className={styles.link}>atmosphere.shop312@gmail.com</a>
+            </div>
           </div>
-          <div className={styles.socailLink}>
-          <a href="tel:+996706354574"className={styles.link}>+996 706 35 45 74</a>
-          <a className={styles.link}>atmosphere.shop312@gmail.com</a>
-          </div>
-          </div>
-
         </nav>
 
         <div className={styles.accordionWrapper}>

@@ -87,12 +87,16 @@
 
 .socialWrapper {
   display: flex;
+  align-items: center;
 }
 
 .socailLink {
   margin-left: 10px;
 }
 
+.socailIconsWrapper {
+  display: flex;
+}
 
 @media (max-width: 776px) {
   .item {
