@@ -1,0 +1,12 @@
+.anchor {
+    width: 50px;
+    height: 50px;
+    background: url('../../../public/assets/anchor.png')no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 5%;
+    z-index: 100;
+    bottom: 5%;
+    cursor: pointer;
+
+}

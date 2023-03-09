@@ -14,84 +14,83 @@
 }
 
 .close {
-    width: 30px;
-    height: 30px;
-    background: url('../../../public/assets/close.png')no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 110;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url("../../../public/assets/close.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 110;
+  cursor: pointer;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    color: white;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  color: white;
+  flex-direction: column;
 }
 
-
-
 .title {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .titleWrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .titleWrapper img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .contacts img {
-    width: 30px;
-    margin-left: 10px;
-    height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  height: 30px;
 }
 
-.whatsapp ,.call{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.whatsapp,
+.call {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .contacts a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
-@media (max-width:1199px) {
-    .wrapper {
-        height:40vh;;
-    }
+@media (max-width: 1199px) {
+  .wrapper {
+    height: 40vh;
+  }
 }
 
-@media (max-width:767px) {
-    .wrapper {
-        width: 50%;
-        height: 40vh;
-    }
+@media (max-width: 767px) {
+  .wrapper {
+    width: 50%;
+    height: 40vh;
+  }
 }
 
-@media (max-width:576px) {
-    .wrapper {
-        height: 50vh;
-        width: 60%;
-    }
+@media (max-width: 576px) {
+  .wrapper {
+    height: 50vh;
+    width: 60%;
+  }
 }
 
-@media (max-width:456px) {
-    .wrapper {
-        height: 40vh;
-        width: 70%;
-    }
+@media (max-width: 456px) {
+  .wrapper {
+    height: 40vh;
+    width: 70%;
+  }
 }

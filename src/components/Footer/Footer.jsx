@@ -45,7 +45,7 @@ const Footer = () => {
           <h2 className={styles.title}>КОНТАКТЫ</h2>
           <div className={styles.socialWrapper}>
             <div className={styles.social}>
-              <div className={styles.socailIconsWrapper}> 
+              <div className={styles.socailIconsWrapper}>
                 <a
                   href="https://wa.me/996706354574"
                   target="_blank"
@@ -108,9 +108,6 @@ const Footer = () => {
                   Оплата и доставка
                 </Link>
               </Typography>
-              {/* <Typography>
-                <Link className={styles.link} to="/contact">Контакты</Link>
-              </Typography> */}
             </AccordionDetails>
           </Accordion>
 

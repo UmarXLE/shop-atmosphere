@@ -9,10 +9,8 @@
     cursor: pointer;
 }
 .img img {
-    /* max-width: 100%; */
     width: 100%;
     overflow: hidden;
-    /* height: 465px; */
     aspect-ratio: 0.7/1;
 }
 .title {

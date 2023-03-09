@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 import styles from "../ProductsPage/productspage.module.css";
 import { products } from "../../database/database";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-
-
-const PlashPage = () => {
-    return (
+import Anchor from '../../components/Anchor/Anchor'
+ const PlashPage = () => {
+  return (
     <div className={styles.wrapper}>
       <div className={styles.top}>
-        <Header />
+        <Header  id='top'/>
         <div className={styles.route}>
           <Link to="/">Главная</Link>
           <div className={styles.icon}>
@@ -40,10 +39,11 @@ const PlashPage = () => {
       </div>
 
       <div className={styles.bottom}>
-          <Footer />
+        <Footer />
       </div>
+      <Anchor name ='#top'/>
     </div>
-    );
+  );
 };
 
 export default PlashPage;

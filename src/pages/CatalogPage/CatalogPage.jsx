@@ -11,13 +11,14 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Route from "../../components/Route/Route";
 import TextField from "@mui/material/TextField";
+import Anchor from "../../components/Anchor/Anchor";
 
 const CatalogPage = () => {
   const [status, setStatus] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [color, setColor] = useState("");
   const [value, setValue] = useState("");
-  
+
   useEffect(() => {
     if (status == "all") {
       setFilteredProducts(products);
@@ -26,24 +27,22 @@ const CatalogPage = () => {
         (product) => product.category === status
       );
       setFilteredProducts(newProducts);
-    } 
+    }
   }, [status, color]);
 
-  
   const handleChange = (e) => {
     setStatus(e.target.value);
     setColor(e.target.value);
   };
 
-  const searchFilteredProducts = filteredProducts.filter(product => {
-    return product.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
-  })
-
+  const searchFilteredProducts = filteredProducts.filter((product) => {
+    return product.name.toLocaleLowerCase().includes(value.toLocaleLowerCase());
+  });
 
   return (
-    <div className={styles.mainWrapper}>
+    <div className={styles.mainWrapper} >
       <div>
-        <Header />
+        <Header id='top'/>
         <Route name="Каталог" />
       </div>
       <div className={styles.container}>
@@ -57,7 +56,7 @@ const CatalogPage = () => {
                   id="demo-select-small"
                   value={status}
                   label="Age"
-                  onChange={(e)=>handleChange(e)}
+                  onChange={(e) => handleChange(e)}
                 >
                   <MenuItem value="all">Все</MenuItem>
                   <MenuItem value="triko">Тренч</MenuItem>
@@ -65,22 +64,6 @@ const CatalogPage = () => {
                   <MenuItem value="plash">Плащ</MenuItem>
                 </Select>
               </FormControl>
-{/* 
-              <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-                <InputLabel id="demo-select-small"></InputLabel>
-                <Select
-                  labelId="demo-select-small"
-                  id="demo-select-small"
-                  value={status}
-                  label="Age"
-                  onChange={handleColor}
-                >
-                  <MenuItem value="all">Все</MenuItem>
-                  <MenuItem value="black">Черный</MenuItem>
-                  <MenuItem value="brown">Коричневый</MenuItem>
-                </Select>
-              </FormControl> */}
-
 
               <TextField
                 onChange={(e) => setValue(e.target.value)}
@@ -110,6 +93,8 @@ const CatalogPage = () => {
             </div>
           </div>
         </div>
+        <Anchor name='#top'/>
+
       </div>
       <div>
         <Footer />

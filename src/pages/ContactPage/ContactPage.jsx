@@ -1,61 +1,65 @@
-import React,{useEffect} from 'react';
-import styles from './contactpage.module.css'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
-import Route from '../../components/Route/Route'
-import DG from '2gis-maps';
+import React, { useEffect } from "react";
+import styles from "./contactpage.module.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Route from "../../components/Route/Route";
+import DG from "2gis-maps";
 
 const ContactPage = () => {
-    return (
-        <div className={styles.wrapper}>
-            <div>
-                <Header/>
-                <Route name='Контакты'/>  
+  return (
+    <div className={styles.wrapper}>
+      <div>
+        <Header />
+        <Route name="Контакты" />
+      </div>
+      <div>
+        <div className={styles.container}>
+          <div className={styles.info}>
+            <h2 className={styles.title}>Контакты</h2>
+            <a className={styles.number} href="tel:+996706354574">
+              +996 706 35 45 74
+            </a>
+            <p className={styles.chart}>пн — пт с 9.00 до 19.00</p>
+            <div className={styles.socialMedia}>
+              <a
+                className={styles.socialItem}
+                target="_blank"
+                href="https://wa.me/996706354574"
+              >
+                <img src="./assets/whatsapp.png" alt="" />
+              </a>
+              <a
+                className={styles.socialItem}
+                target="_blank"
+                href="https://www.instagram.com/atmosphere_shop/"
+              >
+                <img src="./assets/instagram.png" alt="" />
+              </a>
             </div>
-            <div>
-                <div className={styles.container}>
-                    <div className={styles.info}>
-                        <h2 className={styles.title}>Контакты</h2>
-                        <a className={styles.number} href="tel:+996706354574">+996 706 35 45 74</a>
-                        <p className={styles.chart}>пн — пт с 9.00 до 19.00</p>
-                        <div className={styles.socialMedia}>
-                            <a className={styles.socialItem} target='_blank' href="https://wa.me/996706354574">
-                                <img src="./assets/whatsapp.png" alt="" />
-                            </a>
-                            <a className={styles.socialItem} target='_blank' href="https://www.instagram.com/atmosphere_shop/">
-                                <img src="./assets/instagram.png" alt="" />
-                            </a>
-                        </div>
-                        <div className={styles.map}>
-                             <MapAPI /> 
-                        </div>
-                    </div>
-                </div>
+            <div className={styles.map}>
+              <MapAPI />
             </div>
-            <div>
-             <Footer/>
-            </div>
-            
+          </div>
         </div>
-    );
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
 const MapAPI = () => {
-    useEffect(() => {
-            let map
-            map = DG.map('map-container',{
-            center:[42.906872, 74.63971],
-            zoom:20
-        })
+  useEffect(() => {
+    let map;
+    map = DG.map("map-container", {
+      center: [42.906872, 74.63971],
+      zoom: 20,
+    });
 
-        DG.marker([42.906872, 74.63971]).addTo(map)
-    },[])
-    return (
-        <div id='map-container' className={styles.mapApi}>
-            
-        </div>
-    )
-}
-
+    DG.marker([42.906872, 74.63971]).addTo(map);
+  }, []);
+  return <div id="map-container" className={styles.mapApi}></div>;
+};
 
 export default ContactPage;

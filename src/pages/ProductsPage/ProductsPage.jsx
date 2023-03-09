@@ -5,12 +5,13 @@ import ProductItem from "../../components/ProductItem/ProductItem";
 import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Anchor from "../../components/Anchor/Anchor";
 
 const ProductsPage = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.top}>
-        <Header />
+        <Header id='top'/>
         <div className={styles.route}>
           <Link to="/">Главная</Link>
           <div className={styles.icon}>
@@ -39,8 +40,9 @@ const ProductsPage = () => {
       </div>
 
       <div className={styles.bottom}>
-          <Footer />
+        <Footer />
       </div>
+      <Anchor name='#top'/>
     </div>
   );
 };

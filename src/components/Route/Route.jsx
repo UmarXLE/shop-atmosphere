@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Route = (props) => {
   return (
     <div className={styles.route}>
-      <Link to='/'>Главная</Link>
+      <Link to="/">Главная</Link>
       <div className={styles.icon}>
         <img src="./assets/icon.png" alt="" />
       </div>
