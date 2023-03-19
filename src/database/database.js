@@ -418,6 +418,117 @@ export const products = [
         descr:'Ткань драп'
 
     },
+    {
+        id:39,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-39.png',
+        size:'42 44',
+        imgback:'./assets/product-back-trench-39.png',
+        category:'triko',
+        descr:'Ткань драп'
+    },
+    {
+        id:40,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-40.png',
+        size:'42 44',
+        imgback:'./assets/product-back-trench-40.png',
+        category:'triko',
+        descr:'Ткань драп'
+    },
+    {
+        id:41,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-41.png',
+        size:'42 44',
+        imgback:'./assets/product-back-trench-41.png',
+        category:'triko',
+        descr:'Ткань драп'
+    },
+    {
+        id:42,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-42.png',
+        size:'42 44',
+        imgback:'./assets/product-back-trench-42.png',
+        category:'triko',
+        descr:'Ткань драп'
+    },
+    {
+        id:43,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-43.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-43.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:44,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-44.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-44.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:45,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-45.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-45.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:46,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-46.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-46.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:47,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-47.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-47.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:48,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-48.png',
+        size:'42 44',
+        imgback:'./assets/product-back-palto-48.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    {
+        id:49,
+        name:'Плащ Черный',
+        price:'Договорная',
+        img:'./assets/product-49.png',
+        size:'42 44',
+        imgback:'./assets/product-back-plash-24.png',
+        category:'palto',
+        descr:'Ткань драп'
+    },
+    
 
     
     
