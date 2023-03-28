@@ -26,14 +26,14 @@ const ModalWindow = ({ close }) => {
         <div className={styles.contacts}>
           <div className={styles.whatsapp}>
             <a target="_blank" href="https://wa.me/996706354574">
-              +996 99 99 99
+               +996 706 35 45 74
             </a>
             <img src="./assets/whatsapp.png" alt="" />
           </div>
           <div className={styles.call}>
             <a target="_blank" href="tel:+996706354574">
-              +996 99 99 99
-            </a>
+            +996 706 35 45 74
+             </a>
             <img src="./assets/call.png" alt="" />
           </div>
         </div>

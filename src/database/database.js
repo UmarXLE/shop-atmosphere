@@ -460,22 +460,22 @@ export const products = [
     },
     {
         id:43,
-        name:'Плащ Черный',
+        name:'Клубничное пальто',
         price:'Договорная',
         img:'./assets/product-43.png',
         size:'42 44',
         imgback:'./assets/product-back-palto-43.png',
-        category:'palto',
+        category:'Оверсайз',
         descr:'Ткань драп'
     },
     {
         id:44,
-        name:'Плащ Черный',
+        name:'Коричневое пальто',
         price:'Договорная',
         img:'./assets/product-44.png',
         size:'42 44',
         imgback:'./assets/product-back-palto-44.png',
-        category:'palto',
+        category:'Оверсайз',
         descr:'Ткань драп'
     },
     {
@@ -483,17 +483,17 @@ export const products = [
         name:'Плащ Черный',
         price:'Договорная',
         img:'./assets/product-45.png',
-        size:'42 44',
+        size:'Оверсайз',
         imgback:'./assets/product-back-palto-45.png',
         category:'palto',
         descr:'Ткань драп'
     },
     {
         id:46,
-        name:'Плащ Черный',
+        name:'Голубое пальто',
         price:'Договорная',
         img:'./assets/product-46.png',
-        size:'42 44',
+        size:'Оверсайз',
         imgback:'./assets/product-back-palto-46.png',
         category:'palto',
         descr:'Ткань драп'
@@ -503,17 +503,17 @@ export const products = [
         name:'Плащ Черный',
         price:'Договорная',
         img:'./assets/product-47.png',
-        size:'42 44',
+        size:'Оверсайз',
         imgback:'./assets/product-back-palto-47.png',
         category:'palto',
         descr:'Ткань драп'
     },
     {
         id:48,
-        name:'Плащ Черный',
+        name:'Оражевое пальто',
         price:'Договорная',
         img:'./assets/product-48.png',
-        size:'42 44',
+        size:'Оверсайз',
         imgback:'./assets/product-back-palto-48.png',
         category:'palto',
         descr:'Ткань драп'
@@ -523,7 +523,7 @@ export const products = [
         name:'Плащ Черный',
         price:'Договорная',
         img:'./assets/product-49.png',
-        size:'42 44',
+        size:'Оверсайз',
         imgback:'./assets/product-back-plash-24.png',
         category:'palto',
         descr:'Ткань драп'
