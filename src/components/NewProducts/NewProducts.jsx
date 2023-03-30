@@ -1,12 +1,25 @@
-import React from "react";
+import React , {useState} from "react";
 import styles from "./newproducts.module.css";
 
 const NewProducts = () => {
+  const [value , setValue ]= useState('')
+
+
+  const handleValue = (e) => {
+    setValue(e.target.value)
+  }
+
+
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Узнайте первым о новинках</h2>
       <form className={styles.form}>
-        <input type="text" placeholder="Ваш e-mail*" />
+        <input 
+        type="text" 
+        value={value}
+        placeholder="Ваш e-mail*" 
+        onChange={handleValue}
+        />
         <button>ПОДПИСАТЬСЯ</button>
       </form>
 
