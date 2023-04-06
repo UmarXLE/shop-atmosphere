@@ -1,7 +1,7 @@
 export const products = [
     {
         id:1,
-        name:'Тренч Черный',
+        name:'Черный тренч',
         price:'Договорная',
         img:'./assets/product-1.png',
         size:'42 44 46 48',
@@ -11,7 +11,7 @@ export const products = [
     },
     {
         id:2,
-        name:'Тренч Коричневый',
+        name:'Коричневый тренч',
         price:'Договорная',
         img:'./assets/product-2.png',
         size:'42 44 46 48',
@@ -24,7 +24,7 @@ export const products = [
     },
     {
         id:3,
-        name:'Тренч Бежевый',
+        name:'Бежевый тренч',
         price:'Договорная',
         img:'./assets/product-3.png',
         size:'42 44 46 48',
@@ -44,7 +44,7 @@ export const products = [
     },
     {
         id:5,
-        name:'Пальто Голубой',
+        name:'Голубое пальто',
         price:'Договорная',
         img:'./assets/product-5.png',
         size:'42 44 46 48',
@@ -56,7 +56,7 @@ export const products = [
     }
     ,{
         id:6,
-        name:'Пальто Коричневый',
+        name:'Коричневое пальто',
         price:'Договорная',
         img:'./assets/product-6.png',
         size:'42 44 46 48',
@@ -67,7 +67,7 @@ export const products = [
     },
     {
         id:7,
-        name:'Пальто Черный',
+        name:' Черное пальто',
         price:'Договорная',
         img:'./assets/product-7.png',
         size:'42 44 46 48',
@@ -166,7 +166,7 @@ export const products = [
     },
     {
         id:16,
-        name:'Пальто Черный',
+        name:'Черное пальто',
         price:'Договорная',
         img:'./assets/product-16.png',
         size:'42 44',
@@ -309,7 +309,7 @@ export const products = [
     },
     {
         id:29,
-        name:'Плащ Черный',
+        name:'Черный плащ',
         price:'Договорная',
         img:'./assets/product-29.png',
         size:'42 44',
@@ -353,7 +353,7 @@ export const products = [
     },
     {
         id:33,
-        name:'Плащ Черный',
+        name:'Черный плащ',
         price:'Договорная',
         img:'./assets/product-33.png',
         size:'42 44',
@@ -387,7 +387,7 @@ export const products = [
     },
     {
         id:36,
-        name:'Плащ Черный',
+        name:'Черный плащ',
         price:'Договорная',
         img:'./assets/product-36.png',
         size:'42 44',
@@ -430,7 +430,7 @@ export const products = [
     },
     {
         id:40,
-        name:'Плащ Черный',
+        name:'Тренч Черный',
         price:'Договорная',
         img:'./assets/product-40.png',
         size:'42 44',
@@ -440,7 +440,7 @@ export const products = [
     },
     {
         id:41,
-        name:'Плащ Черный',
+        name:'Тренч Черный',
         price:'Договорная',
         img:'./assets/product-41.png',
         size:'42 44',
@@ -465,7 +465,7 @@ export const products = [
         img:'./assets/product-43.png',
         size:'42 44',
         imgback:'./assets/product-back-palto-43.png',
-        category:'Оверсайз',
+        category:'palto',
         descr:'Ткань драп'
     },
     {
@@ -475,12 +475,12 @@ export const products = [
         img:'./assets/product-44.png',
         size:'42 44',
         imgback:'./assets/product-back-palto-44.png',
-        category:'Оверсайз',
+        category:'palto',
         descr:'Ткань драп'
     },
     {
         id:45,
-        name:'Плащ Черный',
+        name:'Пальто Черный',
         price:'Договорная',
         img:'./assets/product-45.png',
         size:'Оверсайз',
@@ -500,7 +500,7 @@ export const products = [
     },
     {
         id:47,
-        name:'Плащ Черный',
+        name:'Пальто Черный',
         price:'Договорная',
         img:'./assets/product-47.png',
         size:'Оверсайз',
@@ -520,7 +520,7 @@ export const products = [
     },
     {
         id:49,
-        name:'Плащ Черный',
+        name:'Пальто Черный',
         price:'Договорная',
         img:'./assets/product-49.png',
         size:'Оверсайз',
